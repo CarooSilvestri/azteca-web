@@ -74,6 +74,10 @@
       Technology Company -
       <router-link to="/terms_and_conditions">Terms & Conditions</router-link>
     </p>
+    <p class="copyright">
+      Desarrollado y diseñado por
+      <a href="https://github.com/CarooSilvestri">Silvestri Web Designer</a>
+    </p>
   </b-row>
 </template>
 
@@ -114,5 +118,9 @@ export default {
 
 .text-muted {
   color: red !important;
+}
+
+a {
+  color: white;
 }
 </style>

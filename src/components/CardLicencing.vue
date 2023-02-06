@@ -1,13 +1,18 @@
 <template>
   <b-row class="cuadro">
-    <b-col cols="5">
-      <img src="../assets/CTEC.png" width="100%" fluid />
+    <b-col cols="4">
+      <img :src="getImgUrl(lic.name)" width="100%" fluid />
     </b-col>
 
-    <b-col cols="6">
-      <p>{{ txt }}</p>
+    <b-col cols="7">
+      <p>{{ lic.description }}</p>
       <p>
-        <b> {{ subtitle }}</b>
+        <b> {{ lic.subtitle }}</b>
+      </p>
+      <p class="callToAction">
+        Call us now and learn how to get your {{ lic.name }} with our help!
+        <br />
+        <span class="phoneNumber">714-363-0006</span>
       </p>
     </b-col>
   </b-row>
@@ -17,17 +22,9 @@
 export default {
   name: "CardLicensing",
   props: {
-    txt: {
-      type: String,
-      default: "",
-    },
-    imgSrc: {
-      type: String,
-      default: "",
-    },
-    subtitle: {
-      type: String,
-      default: "",
+    lic: {
+      type: Object,
+      default: null,
     },
   },
   data() {
@@ -35,16 +32,18 @@ export default {
       src2: "",
     };
   },
-
-  mounted() {
-    this.src2 = "../assets/" + this.imgSrc + ".png";
-    console.log(this.src2.toString());
+  methods: {
+    getImgUrl(nameLic) {
+      var images = require.context("../assets/", false, /\.png$/);
+      return images("./" + nameLic + ".png");
+    },
   },
 };
 </script>
 
 <style scoped>
 .cuadro {
+  margin-top: 5%;
   justify-content: space-between;
   align-items: center;
   background: #f6f6f6;
@@ -57,5 +56,15 @@ export default {
     inset 1px -1px 2px rgba(199, 199, 199, 0.5);
   border-radius: 8px;
   padding: 3%;
+}
+
+.callToAction {
+  font-weight: bold;
+  color: #f2b138;
+  font-size: 20px;
+}
+
+.phoneNumber {
+  font-size: 30pt;
 }
 </style>

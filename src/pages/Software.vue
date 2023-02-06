@@ -1,14 +1,13 @@
 <template>
   <b-container class="space">
-    <b-tabs content-class="hola mt-3" fill id="#hola">
+    <b-tabs content-class="jesus" fill>
       <b-tab
-        title="ATS 1040 Deskop"
+        :title="soft.name"
         active
-        v-for="a in e"
-        :key="a.e"
-        style="border: 1px solid purple"
+        v-for="soft in productsInfo"
+        :key="soft.id"
       >
-        <TabProduct />
+        <TabProduct :product="soft" />
       </b-tab>
     </b-tabs>
   </b-container>
@@ -16,6 +15,7 @@
 
 <script>
 import TabProduct from "../components/TabProduct.vue";
+import productsInfo from "../data/productsInfo.json";
 
 export default {
   name: "Software",
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      e: { 1: "3", 5: "ñ" },
+      productsInfo: productsInfo,
     };
   },
 };
@@ -43,8 +43,8 @@ export default {
   margin-bottom: 3%;
 }
 
-.hola,
-#hola {
-  background-color: "red" !important;
+.tab-panel .tab-content .jesus {
+  background-color: blue;
+  color: white;
 }
 </style>
