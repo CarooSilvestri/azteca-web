@@ -1,44 +1,50 @@
 <template>
-  <div>
-    <!--   <TitlePage title="Software" /> -->
-    <b-container>
-      <b-tabs content-class="mt-3">
-        <b-tab title="ATS 1040 Deskop" active
-          ><p>
-            ATS 1040 is the industry's leading tax software solution for
-            high-volume tax businesses. Built based on the needs of busy tax
-            offices that specialize in providing their taxpayer clients with
-            fast and accurate tax returns, ATS 1040 has been a trusted software
-            solution since 1989. With industry-leading tools such as
-            Point-and-Shoot Error Correction™, exclusive TextLink™ integrated
-            text messaging technology, and support for electronic signature pads
-            and hand-held W-2 barcode scanners, ATS 1040 software users are able
-            to process tax returns more quickly and accurately. b
-          </p></b-tab
-        >
-        <b-tab title="ATS 1040 Online"><p>I'm the second tab</p></b-tab>
-        <b-tab title="ATS Corporations"><p>I'm the second tab</p></b-tab>
-        <b-tab title="ATS Partners"><p>I'm the second tab</p></b-tab>
-      </b-tabs></b-container
-    >
-  </div>
+  <b-container class="space">
+    <b-tabs content-class="hola mt-3" fill id="#hola">
+      <b-tab
+        title="ATS 1040 Deskop"
+        active
+        v-for="a in e"
+        :key="a.e"
+        style="border: 1px solid purple"
+      >
+        <TabProduct />
+      </b-tab>
+    </b-tabs>
+  </b-container>
 </template>
 
 <script>
+import TabProduct from "../components/TabProduct.vue";
+
 export default {
   name: "Software",
   components: {
-    /* TitlePage, */
+    TabProduct,
+  },
+  data() {
+    return {
+      e: { 1: "3", 5: "ñ" },
+    };
   },
 };
 </script>
 
 <style scoped>
+.space {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .titulo {
   background: #010440;
   color: whitesmoke;
   padding: 2%;
   font-weight: bold;
   margin-bottom: 3%;
+}
+
+.hola,
+#hola {
+  background-color: "red" !important;
 }
 </style>

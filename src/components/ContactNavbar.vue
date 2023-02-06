@@ -1,17 +1,17 @@
 <template>
   <b-row class="contactNavbar">
-    <b-col cols="3" align-self="center">
+    <b-col lg="3" sm="12" align-self="center">
       <b-row>
         <b-col cols="1">
           <b-icon-telephone-fill font-scale="1" />
         </b-col>
-        <b-col cols="11" class="no-padding">
+        <b-col cols="9" class="no-padding">
           <p class="call"><b>CALL</b> US! 714-363-0006</p>
         </b-col>
       </b-row>
     </b-col>
 
-    <b-col cols="1" align-self="center" class="justify-center">
+    <b-col lg="1" sm="5" align-self="center" class="justify-center">
       <b-row align-h="evenly">
         <b-col>
           <b-icon-facebook font-scale="1.5" />
@@ -39,7 +39,8 @@ export default {
   background: #125938;
   color: #f2b138;
   justify-content: space-around;
-  padding: 1%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
 }
 
 .call {

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <img src="../assets/0-banner.jpg" w="100vw" />
-    <b-container> </b-container>
+    <b-row class="hola">
+      <img src="../assets/0-banner.jpg" w="100vw" class="p-0" />
+      <div class="centered">Centered</div>
+    </b-row>
   </div>
 </template>
 
@@ -12,4 +14,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
