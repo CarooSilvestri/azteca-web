@@ -42,7 +42,7 @@
               <router-link to="/licensing">Licensing</router-link>
             </b-nav-item>
             <b-nav-item>
-              <router-link to="/contact">Support</router-link>
+              <router-link to="/support">Support</router-link>
             </b-nav-item>
             <b-nav-item>
               <router-link to="/contact">Contact</router-link>
