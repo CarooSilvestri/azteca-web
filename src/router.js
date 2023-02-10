@@ -34,11 +34,6 @@ export const routes = [
     component: Training,
   }, 
   {
-    path: "/software",
-    name: "software",
-    component: Software,
-  },
-  {
     path: "/licensing",
     name: "licensing",
     component: Licensing,
@@ -48,7 +43,7 @@ export const routes = [
     name: "contact",
     component: Contact,
   },
-   {
+  {
     path: "/terms_and_conditions",
     name: "terms_and_conditions",
     component: TermsAndConditions,

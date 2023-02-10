@@ -22,28 +22,27 @@
             <b-nav-item>
               <router-link to="/">Home</router-link>
             </b-nav-item>
+
             <b-nav-item>
               <router-link to="/software">Software</router-link>
             </b-nav-item>
+
             <b-nav-item>
-              <router-link to="/software">Hardware</router-link>
+              <router-link to="/hardware">Hardware</router-link>
             </b-nav-item>
 
-            <b-nav-item-dropdown text="Training">
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="../pages/Contact.vue">FA</b-dropdown-item>
-            </b-nav-item-dropdown>
             <b-nav-item>
-              <router-link to="/training">Training</router-link>
+              <router-link to="/hardware">Hardware</router-link>
             </b-nav-item>
+
             <b-nav-item>
               <router-link to="/licensing">Licensing</router-link>
             </b-nav-item>
+
             <b-nav-item>
               <router-link to="/support">Support</router-link>
             </b-nav-item>
+
             <b-nav-item>
               <router-link to="/contact">Contact</router-link>
             </b-nav-item>

@@ -1,11 +1,14 @@
 <template>
   <b-container class="space">
-    <b-tabs content-class="jesus" fill>
+    <b-tabs
+      active-nav-item-class="font-weight-bold text-uppercase text-danger"
+      fill
+    >
       <b-tab
         :title="soft.name"
-        active
         v-for="soft in productsInfo"
         :key="soft.id"
+        class="tab-name"
       >
         <TabProduct :product="soft" />
       </b-tab>
@@ -41,10 +44,5 @@ export default {
   padding: 2%;
   font-weight: bold;
   margin-bottom: 3%;
-}
-
-.tab-panel .tab-content .jesus {
-  background-color: blue;
-  color: white;
 }
 </style>
