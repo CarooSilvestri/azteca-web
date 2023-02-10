@@ -32,7 +32,7 @@
             </b-nav-item>
 
             <b-nav-item>
-              <router-link to="/hardware">Hardware</router-link>
+              <router-link to="/training">Training</router-link>
             </b-nav-item>
 
             <b-nav-item>
