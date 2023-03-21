@@ -53,7 +53,7 @@ export default {
   margin-bottom: 5%;
 }
 .sectionTitle {
-  padding: 7%;
+  padding: 10%;
   background-image: url(../assets/banners_sections/software.jpg);
   background-size: cover;
   background-position-y: center;
