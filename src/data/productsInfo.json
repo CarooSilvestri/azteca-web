@@ -2,12 +2,10 @@
   {
     "id": "1",
     "name": "ATS 1040 Desktop",
-    "description": "",
     "tittles": [
       {
         "t": "Tax Software for High-Volume Tax Businesses",
-        "d": "ATS 1040 is the industry's leading tax software solution for high-volume tax businesses. Built based on the needs of busy tax offices that specialize in providing their taxpayer clients with fast and accurate tax returns, ATS 1040 has been a trusted software solution since 1989. With industry-leading tools such as Point-and-Shoot Error Correction™, exclusive TextLink™ integrated text messaging technology, and support for electronic signature pads and hand-held W-2 barcode scanners, ATS 1040 software users are able to process tax returns more quickly and accurately.",
-        "points": []
+        "d": "ATS 1040 is the industry's leading tax software solution for high-volume tax businesses. Built based on the needs of busy tax offices that specialize in providing their taxpayer clients with fast and accurate tax returns, ATS 1040 has been a trusted software solution since 1989. With industry-leading tools such as Point-and-Shoot Error Correction™, exclusive TextLink™ integrated text messaging technology, and support for electronic signature pads and hand-held W-2 barcode scanners, ATS 1040 software users are able to process tax returns more quickly and accurately."
       },
       {
         "t": "Fast, Easy, Efficient",
@@ -36,12 +34,10 @@
   {
     "id": "2",
     "name": "ATS 1040 Online",
-    "description": "",
     "tittles": [
       {
         "t": "Real-time, state-of-your-business updates at your fingertips",
-        "d": "Access instructional product videos and online training for the ATS Suite of professional tax preparation products and solutions. Online provides you with a superior solution that adapts and grows with your business – a single product that will support your tax preparation business every step of the way.",
-        "points": []
+        "d": "Access instructional product videos and online training for the ATS Suite of professional tax preparation products and solutions. Online provides you with a superior solution that adapts and grows with your business – a single product that will support your tax preparation business every step of the way."
       },
       {
         "t": "Designed to support tax offices of all types and sizes",
@@ -70,7 +66,7 @@
   },
   {
     "id": "3",
-    "name": "ATS Corpotations",
+    "name": "ATS Corporations",
     "description": "ATS Business tax software offers a complete solution for professional tax preparers who prepare Federal and State business tax returns.",
     "tittles": [
       {

@@ -1,16 +1,42 @@
 <template>
   <div class="tabContent">
-    <h1 class="tab-title">{{ product.name }}</h1>
-    <b-row class="justified">
-      <p>{{ product.description }}</p>
-      <b-col
-        v-for="soft in product.tittles"
-        :key="soft.t"
-        cols="3"
-        class="content-prod"
-      >
-        <h3>{{ soft.t }}</h3>
+    <b-row>
+      <b-img :src="getImgUrl(product.name)" fluid :alt="product.name" />
+    </b-row>
+
+    <b-row v-if="product.description" class="justify mt-5">
+      <b-col cols="7">
+        <h3 class="description">
+          {{ product.description }}
+        </h3>
+      </b-col>
+    </b-row>
+
+    <b-row
+      class="justified content-prod"
+      v-for="soft in product.tittles"
+      :key="soft.t"
+      align-v="center"
+    >
+      <b-col cols="3">
+        <h3 class="titleProd">{{ soft.t }}</h3>
+      </b-col>
+      <b-col cols="8">
         <p>{{ soft.d }}</p>
+
+        <div v-if="soft.points">
+          <ul v-for="point in soft.points" :key="point">
+            <li>{{ point }}</li>
+          </ul>
+        </div>
+      </b-col>
+    </b-row>
+
+    <b-row class="justify">
+      <b-col cols="4">
+        <b-button size="lg" class="btnAction" href="/contact">
+          CALL US!
+        </b-button>
       </b-col>
     </b-row>
   </div>
@@ -25,6 +51,12 @@ export default {
       default: null,
     },
   },
+  methods: {
+    getImgUrl(nameProd) {
+      var images = require.context("../assets/banners_prods/", false, /\.jpg$/);
+      return images("./" + nameProd + ".jpg");
+    },
+  },
 };
 </script>
 
@@ -32,21 +64,36 @@ export default {
 .tabContent {
   border: 1px solid lightgray;
   border-top: none;
-  padding: 3%;
+  padding: 0%;
   text-align: left;
-}
-.tab-title {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 3%;
 }
 
 .content-prod {
-  background: red;
-  padding: 2%;
+  padding: 3%;
+}
+
+.justify {
+  justify-content: center;
 }
 
 .justified {
   justify-content: space-between;
+}
+
+.titleProd {
+  font-weight: bold;
+  text-align: center;
+  color: #f2b33d;
+}
+.description {
+  text-align: center;
+}
+
+.btnAction {
+  background-color: #125938;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10%;
+  width: 100%;
 }
 </style>
