@@ -54,7 +54,7 @@ export default {
 }
 .sectionTitle {
   padding: 7%;
-  background-image: url(../assets/banners_sections/banner.jpg);
+  background-image: url(../assets/banners_sections/software.jpg);
   background-size: cover;
   background-position-y: center;
   color: white;
