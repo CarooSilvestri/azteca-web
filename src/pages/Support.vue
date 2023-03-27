@@ -10,7 +10,7 @@
     </b-row>
 
     <b-row class="center">
-      <b-col cols="8" class="content-help mt-5 mb-5">
+      <b-col cols="11" md="8" class="content-help mt-5 mb-5">
         <h1>We offer remote desktop assistance!</h1>
         <h3 class="mt-4">
           Our specialists can connect to your computer and help you with our
@@ -21,7 +21,7 @@
           href=" https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe"
           variant="primary"
           size="lg"
-          class="mt-5"
+          class="mt-5 mb-5"
         >
           Download Teamviewer
         </b-button>
