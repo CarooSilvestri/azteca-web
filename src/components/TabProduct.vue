@@ -89,12 +89,4 @@ export default {
 .description {
   text-align: center;
 }
-
-.btnAction {
-  background-color: #125938;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 10%;
-  width: 100%;
-}
 </style>

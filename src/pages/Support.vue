@@ -1,57 +1,42 @@
 <template>
-  <b-row>
-    <b-col>
-      <b-row>
-        <b-col cols="12" class="sectionTitle">
-          <h1 class="title">
-            <span class="orange">How can we help you today?</span>
-          </h1>
-          <h1>We support you in every step through the process.</h1>
-        </b-col>
-      </b-row>
+  <b-col>
+    <b-row>
+      <b-col cols="12" class="sectionTitle">
+        <h1 class="title">
+          <span class="orange">How can we help you today?</span>
+        </h1>
+        <h1>We support you in every step through the process.</h1>
+      </b-col>
+    </b-row>
 
-      <b-row class="center">
-        <b-col cols="8">
-          <b-row class="content-help mt-5">
-            <b-col cols="5" class="my-5">
-              <b-card title="Remote desktop assistance" class="cards">
-                <b-card-text class="my-4">
-                  We can connect to your computer and help you with our
-                  software.
-                </b-card-text>
-                <b-button href="#" variant="primary">
-                  I need help with this
-                </b-button>
-              </b-card>
-            </b-col>
+    <b-row class="center">
+      <b-col cols="8" class="content-help mt-5 mb-5">
+        <h1>We offer remote desktop assistance!</h1>
+        <h3 class="mt-4">
+          Our specialists can connect to your computer and help you with our
+          software.
+        </h3>
 
-            <b-col cols="5" class="my-5">
-              <b-card title="Contact with our specialists" class="cards">
-                <b-card-text class="my-4">
-                  You can comunicate with our specialists via Skype!
-                  <br />
-                  <br />
-                </b-card-text>
-                <b-button href="#" variant="primary"
-                  >I need a specialist</b-button
-                >
-              </b-card>
-            </b-col>
-          </b-row>
+        <b-button
+          href=" https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe"
+          variant="primary"
+          size="lg"
+          class="mt-5"
+        >
+          Download Teamviewer
+        </b-button>
 
-          <hr class="mb-5 mt-5" />
-
-          <b-row class="mt-5 mb-5">
-            <h2>Remote desktop assistance</h2>
-          </b-row>
-        </b-col>
-      </b-row>
-    </b-col>
-  </b-row>
+        <card-contact />
+      </b-col>
+    </b-row>
+  </b-col>
 </template>
 
 <script>
+import CardContact from "../components/CardContact.vue";
+
 export default {
+  components: { CardContact },
   name: "Support",
 };
 </script>
