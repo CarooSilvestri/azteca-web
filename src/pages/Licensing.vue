@@ -1,24 +1,22 @@
 <template>
-  <b-row>
-    <b-col>
-      <b-row class="center mb-5">
-        <b-col cols="12" class="sectionTitle">
-          <h1 class="title"></h1>
-        </b-col>
-      </b-row>
+  <b-col>
+    <b-row class="center mb-5">
+      <b-col cols="12" class="sectionTitle">
+        <h1 class="title"></h1>
+      </b-col>
+    </b-row>
 
-      <b-row
-        v-for="license in licences"
-        :key="license.name"
-        align-h="center"
-        class="mb-5"
-      >
-        <b-col cols="9">
-          <CardLicencing :lic="license" />
-        </b-col>
-      </b-row>
-    </b-col>
-  </b-row>
+    <b-row
+      v-for="license in licences"
+      :key="license.name"
+      align-h="center"
+      class="mb-5"
+    >
+      <b-col cols="11" md="9">
+        <CardLicencing :lic="license" />
+      </b-col>
+    </b-row>
+  </b-col>
 </template>
 
 <script>

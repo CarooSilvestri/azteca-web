@@ -201,7 +201,7 @@ export default {
 }
 
 .area {
-  height: 150px;
+  height: 1 50px;
 }
 .right {
   text-align: right;

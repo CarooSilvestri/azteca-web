@@ -1,10 +1,10 @@
 <template>
   <b-row class="center cuadro mt-2">
-    <b-col cols="4">
+    <b-col cols="12" md="4">
       <img :src="getImgUrl(lic.name)" width="100%" fluid />
     </b-col>
 
-    <b-col cols="7">
+    <b-col cols="12" md="7" class="mt-4 mt-lg-0">
       <p>{{ lic.description }}</p>
       <p>
         <b> {{ lic.subtitle }}</b>
