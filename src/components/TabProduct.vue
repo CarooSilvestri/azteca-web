@@ -4,7 +4,7 @@
       <b-img :src="getImgUrl(product.name)" fluid :alt="product.name" />
     </b-row>
 
-    <b-row v-if="product.description" class="justify mt-5">
+    <b-row v-if="product.description" class="justify">
       <b-col cols="7">
         <h3 class="description">
           {{ product.description }}
@@ -65,6 +65,7 @@ export default {
   border: 1px solid lightgray;
   border-top: none;
   padding: 0%;
+  background: aliceblue;
   text-align: left;
 }
 

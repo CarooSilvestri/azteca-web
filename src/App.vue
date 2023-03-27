@@ -2,7 +2,9 @@
   <b-container fluid id="app">
     <ContactNavbar />
     <Navbar />
-    <router-view />
+    <b-row>
+      <router-view />
+    </b-row>
     <Footer />
   </b-container>
 </template>

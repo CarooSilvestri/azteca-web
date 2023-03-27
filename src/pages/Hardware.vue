@@ -1,32 +1,31 @@
 <template>
   <b-container class="my-5">
-    <b-row>
-      <b-col lg="1" class="pb-2">
-        <p>Filter</p>
-      </b-col>
-      <b-col lg="1" class="pb-2">
+    <b-row align-h="evenly">
+      <b-col lg="2" class="pb-2">
         <b-button size="sm">All items</b-button>
       </b-col>
       <b-col lg="2" class="pb-2">
-        <b-button size="sm">Signature pads</b-button>
-      </b-col>
-      <b-col lg="1" class="pb-2">
-        <b-button size="sm">Scanners</b-button>
+        <b-button size="sm" variant="success">Signature pads</b-button>
       </b-col>
       <b-col lg="2" class="pb-2">
-        <b-button size="sm">Work Stations</b-button>
+        <b-button size="sm" variant="danger">Scanners</b-button>
       </b-col>
-      <b-col lg="1" class="pb-2">
-        <b-button size="sm">Monitors</b-button>
+      <b-col lg="2" class="pb-2">
+        <b-button size="sm" variant="warning">Work Stations</b-button>
       </b-col>
-      <b-col lg="1" class="pb-2">
-        <b-button size="sm">Laptops</b-button>
+      <b-col lg="2" class="pb-2">
+        <b-button size="sm" variant="info">Monitors</b-button>
+      </b-col>
+      <b-col lg="2" class="pb-2">
+        <b-button size="sm" variant="primary">Laptops</b-button>
       </b-col>
     </b-row>
 
-    <b-row class="my-5">
-      <b-col cols="3">
-        <CardProduct />
+    <b-row class="my-5" v-for="h in hardware" :key="h.name">
+      <b-col cols="3" v-for="prodH in h" :key="prodH.id">
+        <div v-for="a in prodH" :key="a.id">
+          <CardProduct :productH="a" />
+        </div>
       </b-col>
     </b-row>
   </b-container>
@@ -34,14 +33,15 @@
 
 <script>
 import CardProduct from "../components/CardProduct.vue";
+import products from "../data/products.json";
+
 export default {
   name: "Hardware",
   components: { CardProduct },
-  props: {
-    product: {
-      type: Object,
-      default: null,
-    },
+  data() {
+    return {
+      hardware: products,
+    };
   },
 };
 </script>

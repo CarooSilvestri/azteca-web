@@ -70,4 +70,7 @@ export default {
 .justified {
   justify-content: center;
 }
+.nav-tabs .nav-link.active {
+  background-color: #f2b33d;
+}
 </style>

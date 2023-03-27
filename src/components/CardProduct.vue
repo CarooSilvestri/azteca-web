@@ -1,22 +1,24 @@
 <template>
   <b-card
-    title="Nombre producto"
+    :title="productH.name"
     img-src="https://picsum.photos/600/300/?image=25"
-    img-alt="Image"
+    img-alt="productH"
     img-top
     class="mb-2"
   >
-    <b-card-text> $$$ </b-card-text>
-    <b-row>
+    <b-card-text>{{ productH.price }} </b-card-text>
+    <b-row align-h="center">
       <b-col cols="5">
-        <b-button v-b-modal.modal-1 variant="primary">Ver más</b-button>
+        <b-button v-b-modal.modal-1 class="btnFlat" variant="link">
+          Ver más
+        </b-button>
       </b-col>
       <b-col cols="5">
         <b-button href="#" variant="primary">Comprar</b-button>
       </b-col>
     </b-row>
 
-    <ModalProductInfo />
+    <ModalProductInfo :p="productH" />
   </b-card>
 </template>
 
@@ -27,7 +29,7 @@ export default {
   name: "CardProdut",
   components: { ModalProductInfo },
   props: {
-    product: {
+    productH: {
       type: Object,
       default: null,
     },
@@ -35,4 +37,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.btnFlat {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: gray;
+  background: none;
+}
+</style>
