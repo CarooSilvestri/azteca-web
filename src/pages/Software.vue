@@ -1,33 +1,31 @@
 <template>
-  <b-row>
-    <b-col>
-      <b-row class="center">
-        <b-col cols="12" class="sectionTitle">
-          <h1 class="title">
-            <span class="orange">Industry leading</span> tax software
-          </h1>
-        </b-col>
-      </b-row>
+  <b-col>
+    <b-row class="center">
+      <b-col cols="12" class="sectionTitle">
+        <h1 class="title">
+          <span class="orange">Industry leading</span> tax software
+        </h1>
+      </b-col>
+    </b-row>
 
-      <b-row class="justified my-5">
-        <b-col cols="8">
-          <b-tabs
-            active-nav-item-class="font-weight-bold text-uppercase text-danger"
-            fill
+    <b-row class="justified my-5">
+      <b-col cols="8">
+        <b-tabs
+          active-nav-item-class="font-weight-bold text-uppercase text-danger"
+          fill
+        >
+          <b-tab
+            :title="soft.name"
+            v-for="soft in productsInfo"
+            :key="soft.id"
+            class="tab-name"
           >
-            <b-tab
-              :title="soft.name"
-              v-for="soft in productsInfo"
-              :key="soft.id"
-              class="tab-name"
-            >
-              <TabProduct :product="soft" />
-            </b-tab>
-          </b-tabs>
-        </b-col>
-      </b-row>
-    </b-col>
-  </b-row>
+            <TabProduct :product="soft" />
+          </b-tab>
+        </b-tabs>
+      </b-col>
+    </b-row>
+  </b-col>
 </template>
 
 <script>

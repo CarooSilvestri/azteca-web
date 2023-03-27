@@ -1,34 +1,42 @@
 <template>
-  <b-container class="my-5">
-    <b-row align-h="evenly">
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm">All items</b-button>
-      </b-col>
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm" variant="success">Signature pads</b-button>
-      </b-col>
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm" variant="danger">Scanners</b-button>
-      </b-col>
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm" variant="warning">Work Stations</b-button>
-      </b-col>
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm" variant="info">Monitors</b-button>
-      </b-col>
-      <b-col lg="2" class="pb-2">
-        <b-button size="sm" variant="primary">Laptops</b-button>
+  <b-col>
+    <b-row>
+      <b-col cols="12" class="sectionTitle">
+        <h1 class="title">Hardware</h1>
       </b-col>
     </b-row>
 
-    <b-row class="my-5" v-for="h in hardware" :key="h.name">
-      <b-col cols="3" v-for="prodH in h" :key="prodH.id">
-        <div v-for="a in prodH" :key="a.id">
-          <CardProduct :productH="a" />
+    <b-row class="justified mt-5">
+      <b-col cols="12" md="9">
+        <b-row class="mt-5">
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm">All items</b-button>
+          </b-col>
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm" variant="success">Signature pads</b-button>
+          </b-col>
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm" variant="danger">Scanners</b-button>
+          </b-col>
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm" variant="warning">Work Stations</b-button>
+          </b-col>
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm" variant="info">Monitors</b-button>
+          </b-col>
+          <b-col lg="2" class="pb-2">
+            <b-button size="sm" variant="primary">Laptops</b-button>
+          </b-col>
+        </b-row>
+
+        <div class="my-5" v-for="elem in hardware" :key="elem.id">
+          <div v-for="h in elem" :key="h.id">
+            <CardProduct :productH="h" />
+          </div>
         </div>
       </b-col>
     </b-row>
-  </b-container>
+  </b-col>
 </template>
 
 <script>
@@ -47,24 +55,17 @@ export default {
 </script>
 
 <style scoped>
-.tabContent {
-  border: 1px solid lightgray;
-  border-top: none;
-  padding: 3%;
-  text-align: left;
+.sectionTitle {
+  padding: 10%;
+  background-image: url(../assets/banners_sections/hardware.jpg);
+  background-size: cover;
+  background-position-y: center;
+  color: white;
 }
-.tab-title {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 3%;
+.title {
+  font-size: 55pt;
 }
-
-.content-prod {
-  background: red;
-  padding: 2%;
-}
-
 .justified {
-  justify-content: space-between;
+  justify-content: center;
 }
 </style>

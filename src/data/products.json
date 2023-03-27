@@ -1,93 +1,87 @@
-[
-  {
-    "workstations": [
-      {
-        "id": "1",
-        "name": "Dell Optiplex",
-        "description": {
-          "d": "The OptiPlex 3050 Micro Desktop is an ultra-compact business desktop with multiple mounting possibilities to best fit your workspace. Offers essential best-in-class security and manageability. Enhance your productivity with powerful workstations built for long hours of continuous use. Look for features like… Increased processing power and expanded connectivity options",
-          "points": [
-            "Sturdy chassis with ample room for additional memory, storage and expansion cards",
-            "Ease of upgrading and service for years of use as your organization grows"
-          ]
-        },
+{
+  "workstations": [
+    {
+      "id": "1",
+      "name": "Dell Optiplex",
+      "description": {
+        "overview": "The OptiPlex 3050 Micro Desktop is an ultra-compact business desktop with multiple mounting possibilities to best fit your workspace. Offers essential best-in-class security and manageability. Enhance your productivity with powerful workstations built for long hours of continuous use.",
         "features": [
-          {
-            "title": "Microsoft Windows 10 Professional operating system preinstalled",
-            "desc": "It’s your PC simplified, with fewer steps between you and what you do, easy sharing of photos and videos, and multiple ways to personalize your experience."
-          },
-          {
-            "title": "6th Gen Intel® Core™ i3-6100T processor",
-            "desc": "Smart dual-core processing performance."
-          },
-          {
-            "title": "4GB system memory for basic multitasking",
-            "desc": "Adequate high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once."
-          },
-          {
-            "title": "500GB hard drive for serviceable file storage space",
-            "desc": "Holds your growing collection of digital photos, music and videos. 7200 rpm spindle speed enables rapid read/write times for handling large files and complex applications."
-          },
-          {
-            "title": "4 SuperSpeed 10Gbs USB 3.1 ports",
-            "desc": "Ultra-fast data connections to transfer large files rapidly."
-          },
-          {
-            "title": "2 USB 2.0 ports",
-            "desc": "Quick plug-and-play connectivity for your devices and accessories."
-          },
-          {
-            "title": "Wired network connectivity",
-            "desc": "Built-in Gigabit Ethernet LAN port plugs into wired networks."
-          },
-          {
-            "title": "Basic software package included",
-            "desc": "30-days trial of Microsoft Office."
-          },
-          {
-            "title": "Additional ports",
-            "desc": "Microphone and headphone jacks. HDMI output."
-          }
-        ],
-        "note": "Note: This computer does not include a built-in DVD/CD drive.",
-        "price": "$795"
+          "Sturdy chassis with ample room for additional memory, storage and expansion cards",
+          "Ease of upgrading and service for years of use as your organization grows"
+        ]
       },
-      {
-        "id": "2",
-        "name": "Lenovo Desktop",
-        "description": {
-          "d": "The OptiPlex 3050 Micro Desktop is an ultra-compact business desktop with multiple mounting possibilities to best fit your workspace. Offers essential best-in-class security an manageability. Featuring pin-point accuracy and palm-rejection technology, the Lenovo Active Pen (sold separately) emulates the easy comfort of a pen-on-paper writing experience. And thanks to Windows Ink, you’ll discover all the ways you can turn thoughts into action: Draw on a map and instantly receive turn-by-turn driving directions, write notes that sync up across your devices, and more. Speed & power to get things done The Yoga 720 (12”) makes multi-tasking a breeze. Featuring top-of-the-line Intel Core i7 processing and ample SATA SSD storage, this 2-in-1 packs a punch.",
-          "points": [
-            "Up to 7th Gen Intel Core i7 processing",
-            "Windows 10 Home",
-            "Up to 512 GB M.2 SATA SSD",
-            "Up to 8 GB DDR4"
+      "specs": [
+        {
+          "title": "Operating system",
+          "desc": "Microsoft Windows 10 Professional preinstalled"
+        },
+        {
+          "title": "Processor",
+          "desc": "6th Gen Intel® Core™ i3-6100T dual-core processor"
+        },
+        {
+          "title": "Memory",
+          "desc": "4GB high-bandwidth DDR4 RAM for basic multitasking"
+        },
+        {
+          "title": "Storage",
+          "desc": "500GB 7200 rpm SATA hard drive for serviceable file storage space"
+        },
+        {
+          "title": "Connectivity",
+          "desc": [
+            "4 SuperSpeed 10Gbs USB 3.1 ports for ultra-fast data transfer",
+            "2 USB 2.0 ports for quick plug-and-play connectivity",
+            "Built-in Gigabit Ethernet LAN port for wired network connectivity",
+            "Microphone and headphone jacks, HDMI output"
           ]
         },
-        "price": "$795"
-      }
-    ],
-    "laptops": [
-      {
-        "id": "1",
-        "name": "Lenovo Desktop",
-        "description": {
-          "d": "The OptiPlex 3050 Micro Desktop is an ultra-compact business desktop with multiple mounting possibilities to best fit your workspace. Offers essential best-in-class security an manageability. Featuring pin-point accuracy and palm-rejection technology, the Lenovo Active Pen (sold separately) emulates the easy comfort of a pen-on-paper writing experience. And thanks to Windows Ink, you’ll discover all the ways you can turn thoughts into action: Draw on a map and instantly receive turn-by-turn driving directions, write notes that sync up across your devices, and more. Speed & power to get things done The Yoga 720 (12”) makes multi-tasking a breeze. Featuring top-of-the-line Intel Core i7 processing and ample SATA SSD storage, this 2-in-1 packs a punch.",
-          "points": [
-            "Up to 7th Gen Intel Core i7 processing",
-            "Windows 10 Home",
-            "Up to 512 GB M.2 SATA SSD",
-            "Up to 8 GB DDR4"
-          ]
-        },
-        "price": "$795"
-      }
-    ],
-    "monitors": [
-      {
-        "id": "1",
-        "name": "ASUS Monitor 24″",
-        "description": "This monitor features a 50,000,000:1 smart contrast ratio with aspect control to deliver clear, true-to-life images and video. The Splendid Video Intelligence technology allows you to choose from among 6 preset video modes for optimal viewing.",
+        {
+          "title": "Software",
+          "desc": "30-day trial of Microsoft Office included"
+        }
+      ],
+      "note": "Note: This computer does not include a built-in DVD/CD drive.",
+      "price": "$795"
+    },
+    {
+      "id": "2",
+      "name": "Lenovo Desktop",
+      "description": {
+        "overview": "The Lenovo Desktop is a versatile desktop computer designed to handle multiple tasks with ease. Featuring up to 7th Gen Intel Core i7 processing and up to 512GB M.2 SATA SSD, this desktop delivers fast and responsive performance.",
+        "features": [
+          "Up to 8GB DDR4 RAM for smooth multitasking",
+          "Windows 10 Home for a familiar and productive computing experience"
+        ]
+      },
+      "specs": [],
+      "price": "$795"
+    }
+  ],
+  "laptops": [
+    {
+      "id": "1",
+      "name": "Lenovo Laptop",
+      "description": {
+        "overview": "The Lenovo Laptop is a powerful and portable computing solution designed for productivity and entertainment on-the-go. Featuring up to 7th Gen Intel Core i7 processing and up to 512GB M.2 SATA SSD, this laptop delivers fast and responsive performance. The Lenovo Active Pen (sold separately) emulates the easy comfort of a pen-on-paper writing experience, and thanks to Windows Ink, you’ll discover all the ways you can turn thoughts into action.",
+        "features": [
+          "Up to 8GB DDR4 RAM for smooth multitasking",
+          "Windows 10 Home",
+          "Up to 512 GB M.2 SATA SSD",
+          "Up to 8 GB DDR4"
+        ]
+      },
+
+      "specs": [],
+      "price": "$795"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "1",
+      "name": "ASUS Monitor 24″",
+      "description": {
+        "overview": "This monitor features a 50,000,000:1 smart contrast ratio with aspect control to deliver clear, true-to-life images and video. The Splendid Video Intelligence technology allows you to choose from among 6 preset video modes for optimal viewing.",
         "features": [
           {
             "title": "Ultrafast 2 ms response time",
@@ -117,31 +111,43 @@
             "title": "VESA standard 100mm x 100mm",
             "desc": "Allows for wall mounting with optional mounting kit (not included)."
           }
-        ],
-        "price": "$795"
-      }
-    ],
-    "signature_pads": [
-      {
-        "id": "1",
-        "name": "Topaz T-L460 SigLite LCD 1×5 Series",
-        "description": "SigLite LCD 1×5 (T-L460-HSB-R) is Topaz’s low-cost, pressure-sensitive electronic signature capture pad with an LCD display and USB connection.",
-        "price": "$190"
+        ]
       },
-      {
-        "id": "2",
-        "name": "Topaz T-L460 SigLite 1×5 Series",
-        "description": "With this model series, the signature is only viewable on the computer screen. If your application requires customers to view the signature on the pad’s screen, see the SigLite LCD 1×5.",
-        "price": "$125"
-      }
-    ],
-    "scanners": [
-      {
-        "id": "1",
-        "name": "Motorola-DS8108",
-        "description": "We provide support for these certified handheld scanners, you are able to capture the taxpayer’s source documents and information to associate them with the appropriate tax return ATS tax Software. Get the power of a bar code scanner, digital camera and document scanner in a single, cost-effective device.",
-        "price": "$349.99"
-      }
-    ]
-  }
-]
+      "specs": [],
+      "price": "$795"
+    }
+  ],
+  "signature_pads": [
+    {
+      "id": "1",
+      "name": "Topaz T-L460 SigLite LCD 1×5 Series",
+      "description": {
+        "overview": "SigLite LCD 1×5 (T-L460-HSB-R) is Topaz’s low-cost, pressure-sensitive electronic signature capture pad with an LCD display and USB connection.",
+        "features": []
+      },
+      "price": "$190"
+    },
+    {
+      "id": "2",
+      "name": "Topaz T-L460 SigLite 1×5 Series",
+      "description": {
+        "overview": "With this model series, the signature is only viewable on the computer screen. If your application requires customers to view the signature on the pad’s screen, see the SigLite LCD 1×5.",
+        "features": []
+      },
+      "specs": [],
+      "price": "$125"
+    }
+  ],
+  "scanners": [
+    {
+      "id": "1",
+      "name": "Motorola-DS8108",
+      "description": {
+        "overview": "We provide support for these certified handheld scanners, you are able to capture the taxpayer’s source documents and information to associate them with the appropriate tax return ATS tax Software. Get the power of a bar code scanner, digital camera and document scanner in a single, cost-effective device.",
+        "features": []
+      },
+      "specs": [],
+      "price": "$349.99"
+    }
+  ]
+}
