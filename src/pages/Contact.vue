@@ -188,6 +188,7 @@ export default {
 
 .col-info {
   background: #f2b138;
+  font-size: larger;
 }
 
 .form-style label {

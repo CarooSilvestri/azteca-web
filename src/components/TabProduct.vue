@@ -1,6 +1,6 @@
 <template>
   <div class="tabContent">
-    <b-row>
+    <b-row class="mb-5">
       <b-img :src="getImgUrl(product.name)" fluid :alt="product.name" />
     </b-row>
 
@@ -19,9 +19,9 @@
       align-v="center"
     >
       <b-col cols="3">
-        <h3 class="titleProd">{{ soft.t }}</h3>
+        <h2 class="titleProd">{{ soft.t }}</h2>
       </b-col>
-      <b-col cols="8">
+      <b-col cols="8" class="points">
         <p>{{ soft.d }}</p>
 
         <div v-if="soft.points">
@@ -32,18 +32,14 @@
       </b-col>
     </b-row>
 
-    <b-row class="justify">
-      <b-col cols="4">
-        <b-button size="lg" class="btnAction" href="/contact">
-          CALL US!
-        </b-button>
-      </b-col>
-    </b-row>
+    <b-row class="justify"> <btn-call-us /> </b-row>
   </div>
 </template>
 
 <script>
+import BtnCallUs from "./BtnCallUs.vue";
 export default {
+  components: { BtnCallUs },
   name: "TabProduct",
   props: {
     product: {
@@ -62,15 +58,19 @@ export default {
 
 <style scoped>
 .tabContent {
-  border: 1px solid lightgray;
-  border-top: none;
   padding: 0%;
-  background: aliceblue;
   text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: white;
+  box-shadow: 16px 15px 35px -4px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 16px 15px 35px -4px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 16px 15px 35px -4px rgba(0, 0, 0, 0.33);
 }
 
 .content-prod {
-  padding: 3%;
+  padding: 1% 3% 2% 3%;
+  color: black;
 }
 
 .justify {
@@ -88,5 +88,10 @@ export default {
 }
 .description {
   text-align: center;
+
+  color: black;
+}
+.points {
+  font-size: large;
 }
 </style>

@@ -8,18 +8,15 @@
       </b-col>
     </b-row>
 
-    <b-row class="justified my-5">
-      <b-col cols="8">
-        <b-tabs
-          active-nav-item-class="font-weight-bold text-uppercase text-danger"
-          fill
-        >
-          <b-tab
-            :title="soft.name"
-            v-for="soft in productsInfo"
-            :key="soft.id"
-            class="tab-name"
-          >
+    <b-row class="justified py-5 tab-cont">
+      <b-col cols="10">
+        <b-tabs active-tab-class="tab-name" fill>
+          <b-tab v-for="soft in productsInfo" :key="soft.id">
+            <template #title>
+              <span class="tab-name">
+                <strong> {{ soft.name }}</strong>
+              </span>
+            </template>
             <TabProduct :product="soft" />
           </b-tab>
         </b-tabs>
@@ -46,10 +43,6 @@ export default {
 </script>
 
 <style scoped>
-.space {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 .sectionTitle {
   padding: 10%;
   background-image: url(../assets/banners_sections/software.jpg);
@@ -65,10 +58,19 @@ export default {
   color: #f2b33d;
   font-weight: 600;
 }
+.tab-cont {
+  background-color: #eaeaea;
+}
 .justified {
   justify-content: center;
 }
-.nav-tabs .nav-link.active {
-  background-color: #f2b33d;
+
+.tab-cont {
+  font-size: 20pt !important;
+  color: black;
+}
+
+.t:active {
+  color: red !important;
 }
 </style>

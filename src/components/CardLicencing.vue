@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     getImgUrl(nameLic) {
-      var images = require.context("../assets/", false, /\.png$/);
+      var images = require.context("../assets/patents/", false, /\.png$/);
       return images("./" + nameLic + ".png");
     },
   },

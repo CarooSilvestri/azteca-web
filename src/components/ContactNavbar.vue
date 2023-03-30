@@ -2,11 +2,8 @@
   <b-row class="contactNavbar">
     <b-col lg="3" sm="12" align-self="center">
       <b-row>
-        <b-col cols="1">
-          <b-icon-telephone-fill font-scale="1" />
-        </b-col>
         <b-col cols="9" class="no-padding">
-          <p class="call"><b>CALL</b> US! 714-363-0006</p>
+          <p class="call"><b>DOWNLOAD</b> DEMO!</p>
         </b-col>
       </b-row>
     </b-col>
@@ -36,9 +33,9 @@ export default {
 
 <style scoped>
 .contactNavbar {
-  background: #125938;
-  color: #f2b138;
-  justify-content: space-around;
+  background: #010440;
+  color: white;
+  justify-content: space-evenly;
   padding-top: 0.75%;
   padding-bottom: 0.75%;
 }
@@ -46,6 +43,7 @@ export default {
 .call {
   text-align: left;
   margin: 0;
+  font-size: larger;
 }
 
 .no-padding {

@@ -12,7 +12,7 @@ export default {
 
 <style>
 .btnAction {
-  background-color: #125938 !important;
+  background-color: #010440 !important;
   font-size: 32px !important;
   text-align: center;
   margin-bottom: 10%;

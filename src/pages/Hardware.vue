@@ -10,32 +10,40 @@
       <b-col cols="12" md="9">
         <b-row class="mt-5">
           <b-col lg="2" class="pb-2">
-            <b-button size="sm">All items</b-button>
+            <b-button size="lg" variant="warning">All items</b-button>
           </b-col>
           <b-col lg="2" class="pb-2">
-            <b-button size="sm" variant="success">Signature pads</b-button>
+            <b-button size="lg" variant="warning">Signature pads</b-button>
           </b-col>
           <b-col lg="2" class="pb-2">
-            <b-button size="sm" variant="danger">Scanners</b-button>
+            <b-button size="lg" variant="warning">Scanners</b-button>
           </b-col>
           <b-col lg="2" class="pb-2">
-            <b-button size="sm" variant="warning">Work Stations</b-button>
+            <b-button size="lg" variant="warning">Work Stations</b-button>
           </b-col>
           <b-col lg="2" class="pb-2">
-            <b-button size="sm" variant="info">Monitors</b-button>
+            <b-button size="lg" variant="warning">Monitors</b-button>
           </b-col>
           <b-col lg="2" class="pb-2">
-            <b-button size="sm" variant="primary">Laptops</b-button>
+            <b-button size="lg" variant="warning">Laptops</b-button>
           </b-col>
         </b-row>
 
-        <div class="my-5" v-for="elem in hardware" :key="elem.id">
-          <div v-for="h in elem" :key="h.id">
-            <CardProduct :productH="h" />
-          </div>
-        </div>
+        <b-row class="mb-5">
+          <b-col cols="3" class="mt-5" v-for="elem in hardware" :key="elem.id">
+            <CardProduct :productH="elem" @show-modal="showModal" />
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
+
+    <b-modal
+      v-if="selectedProduct"
+      :title="selectedProduct.name"
+      @hidden="resetSelectedProduct"
+    >
+      <p>{{ selectedProduct.description }}</p>
+    </b-modal>
   </b-col>
 </template>
 
@@ -49,7 +57,17 @@ export default {
   data() {
     return {
       hardware: products,
+      selectedProduct: null,
     };
+  },
+  methods: {
+    showModal(product) {
+      this.selectedProduct = product;
+      console.log(product);
+    },
+    resetSelectedProduct() {
+      this.selectedProduct = null;
+    },
   },
 };
 </script>
