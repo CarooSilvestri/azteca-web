@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/azteca-web'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/azteca-web/'
+    : '/'
 }
